@@ -1,0 +1,10 @@
+xephyr-fvwm-matlab > /dev/null 2>&1 &
+DISPLAY=:1; echo "close all, clear all, main" | matlab-gui-send
+DISPLAY=:1; echo "close all, clear all, run_gui" | matlab-gui-send
+DISPLAY=:1; echo "tests" | matlab-gui-send
+
+DISPLAY=:1; echo "my_dir = '/path/to/source', cd(my_dir), addpath(genpath(my_dir))" | matlab-gui-send
+
+DISPLAY=:1; echo "rand('seed', 1)" | matlab-gui-send
+
+DISPLAY=:1; echo "tic, main, toc" | matlab-gui-send
