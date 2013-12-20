@@ -1,0 +1,53 @@
+%% vim:tw=66:spell:wrap:ft=tex:fdm=marker
+% Preamble {{{
+\documentclass[%
+        hyperref={%
+                pdfauthor={Zakariyya Mughal},%
+                pdfpagemode={None},pdfpagelayout={SinglePage}}%
+        xcolor={x11names},%
+]{beamer}
+\usetheme{Warsaw}
+\usecolortheme{beaver}
+\usepackage{textcomp}
+\usepackage{fancyvrb}
+\usepackage{changepage}
+\usepackage{multicol}
+\usepackage{wasysym}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+
+\lstset{%basicstyle=\small\ttfamily,
+%numbers=left,
+%escapeinside=||
+}
+\newenvironment{indented}{\begin{adjustwidth}{1.5em}{}}{\end{adjustwidth}}
+
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes,automata}
+
+\title[Short title]{Long title}
+\author{Zaki Mughal}
+\institute{Computational Biomedicine Lab\\University of Houston}
+\date{\today}
+%}}}
+\begin{document}
+
+\frame{\titlepage}
+\begin{frame}
+	Slides are at \url{TODO}.
+\end{frame}
+
+%\section{Introduction}\frame{\insertsection}
+
+
+%\begin{frame}
+	%\frametitle{This time}
+%\end{frame}
+
+%\section{Section}\frame{\insertsection}
+%\begin{frame}[fragile]
+%\begin{lstlisting}
+%\end{lstlisting}
+%\end{frame}
+
+\end{document}
