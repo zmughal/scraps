@@ -1,10 +1,18 @@
 % vim:ft=tex
 \documentclass{article}
 
-\usepackage[x11names, rgb]{xcolor}
+\usepackage[x11names, rgb, table]{xcolor}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{snakes,arrows,shapes,automata}
+
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\cellcolor{green!25}\ding{51}}%
+\newcommand{\xmark}{\cellcolor{red!25}\ding{55}}%
+
+\usepackage{algpseudocode}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
 
 %\usepackage{gensymb}
 \usepackage{siunitx}
@@ -35,6 +43,7 @@
 \usepackage{setspace}
 \usepackage{calc}
 %\usepackage{geometry}
+\usepackage{xfrac}
 
 \usepackage[english,iso]{isodate}
 \usepackage{fancybox}
@@ -64,6 +73,8 @@ frame=trBL}
 \usepackage{hyperref}
 \hypersetup{%
 colorlinks=true%
+pdfauthor={TODO Mughal, Zakariyya},%
+pdftitle={TODO}%
 }
 \usepackage[all]{hypcap}
 
@@ -74,6 +85,7 @@ colorlinks=true%
 \DeclareMathOperator{\sgn}{sgn}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\support}{supp}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
 
 %\usepackage{steinmetz}
 \newcommand{\phase}[1]{\angle{}#1}
@@ -136,6 +148,7 @@ colorlinks=true%
 \else%
 \HCode{<hr width="50\%" align="center" style="width:50\%;float:center;" />}%
 \fi}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 \newcounter{qcount}
 \begin{list}{\arabic{qcount}.}
