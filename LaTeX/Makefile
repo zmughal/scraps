@@ -12,4 +12,7 @@ clean:
 cleanall:	clean
 	-rm -f *.pdf *.dvi
 
+%.texin: %.sk
+	sketch $< > $@
+
 .PHONY:	clean cleanall
