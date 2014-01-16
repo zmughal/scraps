@@ -4,7 +4,7 @@ paper.pdf: paper.tex *.tex
 		&& pdflatex -interaction=nonstopmode paper \
 		&& pdflatex -interaction=nonstopmode paper \
 		&& pdflatex -interaction=nonstopmode paper
-		#&& bibtex paper
+		#&& bibtex paper \
 
 # ~/make/texclean.mk
 clean:
