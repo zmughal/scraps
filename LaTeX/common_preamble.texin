@@ -150,10 +150,11 @@ pdftitle={TODO}%
 \fi}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
-\newcounter{qcount}
-\begin{list}{\arabic{qcount}.}
-{\usecounter{qcount}
-\setlength{\leftmargin}{\rightmargin}}
+%\newcounter{qcount}
+%\begin{list}{\arabic{qcount}.}
+%{\usecounter{qcount}
+%\setlength{\leftmargin}{\rightmargin}}
+%\end{list}
 
 
 %\begin{enumerate}[label=\alph*)]
