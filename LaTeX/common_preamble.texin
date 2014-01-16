@@ -72,7 +72,7 @@ frame=trBL}
 
 \usepackage{hyperref}
 \hypersetup{%
-colorlinks=true%
+colorlinks=true,%
 pdfauthor={TODO Mughal, Zakariyya},%
 pdftitle={TODO}%
 }
