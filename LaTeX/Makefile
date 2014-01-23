@@ -1,10 +1,11 @@
-paper.pdf: paper.tex *.tex
+PAPER_TARGET:= paper
+$(PAPER_TARGET).pdf: $(PAPER_TARGET).tex *.tex
 	cd . \
-		&& pdflatex -interaction=nonstopmode paper \
-		&& pdflatex -interaction=nonstopmode paper \
-		&& pdflatex -interaction=nonstopmode paper \
-		&& pdflatex -interaction=nonstopmode paper
-		#&& bibtex paper
+		&& pdflatex -interaction=nonstopmode $(PAPER_TARGET) \
+		&& pdflatex -interaction=nonstopmode $(PAPER_TARGET) \
+		&& pdflatex -interaction=nonstopmode $(PAPER_TARGET) \
+		&& pdflatex -interaction=nonstopmode $(PAPER_TARGET)
+		#&& bibtex $(PAPER_TARGET)
 
 # ~/make/texclean.mk
 clean:
