@@ -1,5 +1,5 @@
-PAPER_DIR := .
-PAPER_TARGET:= paper
+PAPER_DIR := . # TODO
+PAPER_TARGET:= paper # TODO
 $(PAPER_DIR)/$(PAPER_TARGET).pdf: $(PAPER_DIR)/$(PAPER_TARGET).tex $(PAPER_DIR)/*.tex
 	cd $(PAPER_DIR) \
 		&& pdflatex -interaction=nonstopmode $(PAPER_TARGET) \
@@ -26,7 +26,7 @@ cleanall:	clean
 
 
 # zip up the files for distribution
-DIST_TARGET:= "dist"
+DIST_TARGET:= "dist" # TODO
 
 dist:
 	-mkdir "$(DIST_TARGET)"
