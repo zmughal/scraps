@@ -1,0 +1,23 @@
+#!/bin/bash
+
+CURDIR=`dirname "$0"`
+
+if [ -z "$1" ]; then
+	echo "$0: requires argument"
+	exit 1
+fi
+
+HWNAME="$1"
+
+HWDIR="$HWNAME/$HWNAME"
+if [ -d $HWDIR ]; then
+	echo "$0: error: directory already exists"
+	exit 1
+fi
+mkdir -p "$HWDIR"
+cp -puvR "$CURDIR"/hw00.tex "$HWDIR/$HWNAME.tex"
+cp -puvR "$CURDIR"/../Makefile \
+         "$CURDIR"/../common_preamble.texin \
+         "$HWDIR"
+( cd "$HWDIR" && git init )
+ack TODO "$HWDIR"
