@@ -22,7 +22,7 @@ cleanall:	clean
 %.texin: %.sk
 	sketch $< > $@
 
-.PHONY:	clean cleanall
+.PHONY:	clean cleanall dist
 
 
 # zip up the files for distribution
