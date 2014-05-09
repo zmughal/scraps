@@ -85,6 +85,7 @@ pdftitle={TODO}%
 \DeclareMathOperator{\sgn}{sgn}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\support}{supp}
+\DeclareMathOperator*{\argmax}{\arg\!\min}
 \DeclareMathOperator*{\argmin}{\arg\!\min}
 
 %\usepackage{steinmetz}
