@@ -8,7 +8,7 @@ $(PAPER_DIR)/$(PAPER_TARGET).pdf: $(PAPER_DIR)/$(PAPER_TARGET).tex $(PAPER_DIR)/
 		&& pdflatex -interaction=nonstopmode $(PAPER_TARGET)
 		#&& bibtex $(PAPER_TARGET)
 
-# ~/make/texclean.mk
+# ../build/latex/clean.mk
 clean:
 	-rm -f $(PAPER_DIR)/*.out $(PAPER_DIR)/*.log \
 	       $(PAPER_DIR)/*.aux $(PAPER_DIR)/*.toc \
