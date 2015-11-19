@@ -10,3 +10,8 @@
 *.blg
 *.bcf
 *.run.xml
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
