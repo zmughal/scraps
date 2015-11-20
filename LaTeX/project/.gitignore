@@ -15,3 +15,6 @@
 *.gls
 *.glsdefs
 *.ist
+*.acn
+*.acr
+*.alg
