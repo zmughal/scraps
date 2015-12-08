@@ -30,4 +30,6 @@
 *.snm
 ## synctex
 *.synctex.gz
+## xwatermark
+*.xwm
 # }}}
