@@ -78,6 +78,8 @@ pdftitle={TODO}%
 }
 \usepackage[all]{hypcap}
 
+\usepackage{cleveref}
+
 \DeclareMathOperator{\trace}{tr}
 \DeclareMathOperator{\linspan}{span}
 \DeclareMathOperator{\nullspace}{N}
